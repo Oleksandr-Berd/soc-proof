@@ -1,8 +1,20 @@
 import styled from "styled-components";
 
 export const CommentsListCustom = styled.ul`
+
+@media (min-width: 1280px){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
   & > li:not(:last-child) {
     margin-bottom: 16px;
+
+    @media (min-width: 1280px){
+        margin-bottom: 0;
+        margin-right: 30px;
+    }
   }
 
   & > li {
@@ -17,6 +29,17 @@ export const CommentsListCustom = styled.ul`
     color: #fff;
 
     border-radius: 8px;
+
+    @media (min-width: 1280px){
+
+        &:nth-child(2){
+            transform: translateY(16px);
+        }
+
+        &:last-child{
+            transform: translateY(32px);
+        }
+    }
 
     & > div {
       display: flex;
