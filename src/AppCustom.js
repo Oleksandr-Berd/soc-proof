@@ -16,4 +16,11 @@ export const AppCustom = styled.div`
   font-family: "Spartan";
   background: url(${mobTop}), url(${mobButton});
   background-repeat: no-repeat;
+
+  @media (min-width: 1280px){
+    padding-left: 141px;
+    padding-right: 141px;
+    padding-top: 118px;
+    padding-bottom: 132px;
+  }
 `;

@@ -9,6 +9,24 @@ export const RateList = styled.ul`
 
     border-radius: 8px;
 
+    @media (min-width: 1280px) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      padding-left: 32px;
+      padding-right: 79px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      &:first-child {
+        transform: translateX(-95px);
+      }
+      &:nth-child(2){
+        transform: translateX(-47px);
+      }
+    }
+
     & > div {
       display: flex;
       flex-direction: row;
@@ -18,6 +36,11 @@ export const RateList = styled.ul`
 
       & > svg:not(:last-child) {
         margin-right: 8px;
+      }
+
+      @media (min-width: 1280px) {
+        margin-bottom: 0;
+        margin-right: 32px;
       }
     }
 
